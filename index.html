@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquina de escrever</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div id="frase"></div>
+
+    <div id="containerTela">
+        <button id="jogar" onclick="iniciarJogo()">JOGAR</button>
+        <div class="display" id="tela"> </div>
+        <button id="botaoEnviar"  onclick="btEnviar()"  >ENVIAR</button>
+    </div>
+   
+    <div class="container-key">
+        <button type="button" onclick="pegar(1)" >1</button>
+        <button type="button" onclick="pegar(2)" >2</button>
+        <button type="button" onclick="pegar(3)" >3</button>
+        <button type="button" onclick="pegar(4)">4</button>
+        <button type="button" onclick="pegar(5)">5</button>
+        <button type="button" onclick="pegar(6)">6</button>
+        <button type="button" onclick="pegar(7)">7</button>
+        <button type="button" onclick="pegar(8)">8</button>
+        <button type="button" onclick="pegar(9)">9</button>
+        <button type="button" onclick="pegar(0)">0</button>
+        <button type="button" onclick="limpar()">&#8592</button>
+        <button type="button" onclick="pegar('q')">Q</button>
+        <button type="button" onclick="pegar('w')">W</button>
+        <button type="button" onclick="pegar('e')">E</button>
+        <button type="button" onclick="pegar('r')">R</button>
+        <button type="button" onclick="pegar('t')">T</button>
+        <button type="button" onclick="pegar('y')">Y</button>
+        <button type="button" onclick="pegar('u')">U</button>
+        <button type="button" onclick="pegar('i')">I</button>
+        <button type="button" onclick="pegar('o')">O</button>
+        <button type="button" onclick="pegar('p')">P</button>
+        <button type="button" onclick="deletartudo()">&#x1f5d1</button>
+        <button type="button" onclick="pegar('a')">A</button>
+        <button type="button" onclick="pegar('s')">S</button>
+        <button type="button" onclick="pegar('d')">D</button>
+        <button type="button" onclick="pegar('f')">F</button>
+        <button type="button" onclick="pegar('g')">G</button>
+        <button type="button" onclick="pegar('h')">H</button>
+        <button type="button" onclick="pegar('j')">J</button>
+        <button type="button" onclick="pegar('k')">K</button>
+        <button type="button" onclick="pegar('l')">L</button>
+        <button type="button" onclick="pegar('ç')">Ç</button>
+        <button type="button" onclick="pegar('!')">!</button>
+        <button type="button" onclick="pegar('z')">Z</button>
+        <button type="button" onclick="pegar('x')">X</button>
+        <button type="button" onclick="pegar('c')">C</button>
+        <button type="button" onclick="pegar('v')">V</button>
+        <button type="button" onclick="pegar('b')">B</button>
+        <button type="button" onclick="pegar('n')">N</button>
+        <button type="button" onclick="pegar('m')">M</button>
+        <button type="button" onclick="pegar('.')">.</button>
+        <button type="button" onclick="pegar(',')">,</button>
+        <button type="button" onclick="pegar(':')">:</button>
+        <button type="button" onclick="pegar('?')">?</button>
+    </div>
+    <div  class="container-key-down">
+        <button type="button" onclick="space()">Space</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
