@@ -6,15 +6,20 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    
 }
 
 body {
-    background-color: rgb(26, 25, 25);
-    display: flex;
+  
+    
+}
+#global{
+  display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200px;
     flex-direction: column;
+    background-color:black;
+    height: 100%;
 }
 
 .display {
@@ -38,6 +43,10 @@ body {
     height: 5px;
     border: none;
 
+}
+#contagemReg{
+
+    font-size: 30px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -64,6 +73,7 @@ body {
     display: grid;
     margin-top: 0px;
     margin-right: 0px;
+    margin-bottom: 235px;
     background-color: white;
     width: 30rem;
     height: 2rem;
@@ -107,4 +117,24 @@ body {
 #tela {
     outline: none;
 }
+.timer {
+    position: absolute;
+    height: 10px;
+    top: 0px;
+    background: red;
+    animation: tempoCronometro 15s linear;
+}
 
+@keyframes tempoCronometro {
+
+     from{
+
+         width: 0%;
+         
+     }
+     to{
+
+        width: 100vw;
+        
+     }
+}
